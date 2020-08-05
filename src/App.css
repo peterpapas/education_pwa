@@ -1,0 +1,148 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"); */
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.scrolling-wrapper {
+	background-color: #61dafb8a;
+}
+.card {
+	background-color: yellow;
+}
+
+.scrolling-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	justify-content: space-between;
+}
+/* Makes the scrolling smoother */
+.scrolling-wrapper {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Hides the scroll bar */
+.scrolling-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.card {
+	flex: 0 0 auto;
+	margin-left: 10%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 18rem;
+	box-shadow: 0 2px 5px;
+}
+
+/* I need to make cards width smaller  */
+
+.container-buttons-grid {
+	display: grid;
+	/* grid-template-columns: auto auto;
+	justify-content: center;
+	padding: 20px 0; */
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: auto;
+	grid-row-gap: 0%;
+	background-color: #61dafb8a;
+}
+/* Old color 61dafb */
+.grid-button {
+	margin: 5%;
+	margin-bottom: 2.5;
+	margin-top: 2.5;
+	height: 100px;
+	box-shadow: 0 5px 10px;
+}
+
+.availability-calendar-container {
+	height: 700;
+}
+
+.form-container {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: #61dafb8a;
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.contacts-cards {
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 90%;
+	box-shadow: 0 2px 5px;
+}
+
+.contact-faq-acordion-card {
+	margin-left: auto;
+}
+
+.practice-cards {
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 90%;
+	box-shadow: 0 2px 5px;
+}
+
+.practice-h2-title {
+	margin: auto;
+	width: 70%;
+}
+
+.AdminSingleCard-Container {
+	display: flex;
+	justify-content: center;
+}
+
+.AdminSingleCard-Container-buttons {
+	display: flex;
+	justify-content: center;
+}
