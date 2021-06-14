@@ -1,3 +1,5 @@
+A mobile first design PWA created to help teachers and students stay up to date with educational material and upcoming tasks and events.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
