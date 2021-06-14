@@ -6,10 +6,8 @@ import Button from "react-bootstrap/Button";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 //Material UI
-import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import FolderIcon from "@material-ui/icons/Folder";
 import RestoreIcon from "@material-ui/icons/Restore";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
@@ -20,8 +18,6 @@ import {
 	faCalendarCheck,
 	faAddressBook,
 	faQuestionCircle,
-	faBullhorn,
-	faCommentDots,
 	faPuzzlePiece,
 	faFilePdf,
 	faGraduationCap,
@@ -62,7 +58,7 @@ class Home extends Component {
 	componentDidMount() {
 		this.unsubscribe = this.ref.onSnapshot(this.onCollectionUpdate);
 	}
-
+	//--If cards dont work go to firebase>firestore>security rules> and extend the time/date to accept API requests
 	render() {
 		return (
 			<div>
@@ -75,7 +71,8 @@ class Home extends Component {
 				<div>
 					<p>Count down </p>
 				</div>
-				<div class="scrolling-wrapper">
+
+				<div className="scrolling-wrapper">
 					{this.state.eventsCards.map((eventsCard) => (
 						<Card className="card">
 							<Card.Header as="h5">{eventsCard.header}</Card.Header>

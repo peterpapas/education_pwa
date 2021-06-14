@@ -1,11 +1,9 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import FormCheck from "react-bootstrap/FormCheck";
 import Button from "react-bootstrap/Button";
 import firebaseDb from "../firebase";
 import { useHistory } from "react-router-dom";
-import Alert from "react-bootstrap/Alert";
+
 
 function Bookings() {
 	const inistialFieldValues = {
